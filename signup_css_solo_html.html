@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-CSS-Avanzado</title>
+
+<style>
+      /* Importación de fuentes */
+
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+    
+
+
+    /* Definición de variables */
+:root{
+    --fuente-prim:'Montserrat Alternates';
+    --fuente-sec:'Montserrat';
+    --fuente-ter:'Roboto';
+    --bg-color-prim: #ffff;
+    --bg-color-sec:white;
+}
+
+body{
+    width: 1440px;
+    height: 1240px;
+    background-color: var(--bg-color-prim);
+}
+
+.container-izq{
+    background-color: var(--bg-color-sec);
+    width: 567px;
+    height: 734px;    
+    position: relative;
+    top: 144px;
+    left: 153px;
+    border: 0px;    
+    box-shadow: 
+    /* Sombra derecha */ 20px 20px 60px 0px rgba(94, 94, 94, 0.25),
+    /* Sombra izquierda */-20px -20px 60px 0px rgba(94, 94, 94, 0.25);
+}
+
+#cuenta{
+    position: absolute;
+    width: 400px;
+    height: 57px;
+    font-family: var(--fuente-prim);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    top: 73px;
+    left: 63px;
+}
+
+#google{
+    position: absolute;
+    width: 205px;
+    height: 70px;
+    /* flex-shrink:0; */
+    border-radius: 12px;
+    border: 1px solid black;
+    background: rgba(244, 241, 255, 0.0);
+    top: 152px;
+    left: 63px;
+
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
+    justify-content:center;
+
+    font-family: var(--fuente-sec);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#apple{
+    position: absolute;
+    width: 205px;
+    height: 70px;
+    border-radius: 12px;
+    border: solid black 1px;
+    background: rgba(244, 241, 255, 0.0);
+    top:152px;
+    right: 52px;
+
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
+    justify-content:center;
+
+    font-family: var(--fuente-sec);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#login_button{
+    position: absolute;
+    display: flex;
+    width: 452px;
+    height: 67px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    left: 63px;
+    top: 553px;
+
+    color: #F4F1FF;
+    text-align: center;
+    font-family: var(--fuente-ter);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border: 0px;
+    border-radius: 12px;
+    background-color: #6B43FF;
+}  
+
+#login_button:hover{
+    color:#d8cff9;    
+}
+
+#datos{
+    position: absolute;
+    top:282px;
+    left: 63px;
+    font-family: var(--fuente-sec);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#data{
+    width: 425px;
+    height: 67px;
+    font-size: 25px;
+    border-radius: 12px;
+    border: 1px solid black;
+    display: flex;
+    padding: 0px 0px 0px 27px;
+}
+
+#already_a{
+    position: absolute;
+    display: flex;
+    width: 321px;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    left: 200px;
+    top: 629px;
+
+    color: #6B43FF;
+    text-align: right;
+    font-family: var(--fuente-sec);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-der{
+    position: absolute;
+    width: 587px;
+    height: 1240px;
+    left: 853px;
+    top:0px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(180, 146, 253, 0.30) 0%, rgba(173, 78, 245, 0.95) 100%);
+}
+
+#mono{
+    position: absolute;
+    width: 360px;
+    height: 320px;
+    flex-shrink: 0;
+    left: 117px;
+    top: 300px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="container-izq">
+
+        <div id="cuenta">Create your account</div>
+        <div id="google"><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png" width="40" height="41">Use Google</a></div>
+        <div id="apple"><a href=""><img src="https://pngfre.com/wp-content/uploads/apple-logo-13-1024x1024.png" width="50" height="50">Use Apple</a></div>
+        <a href="" target="_blank"><button id="login_button">Login</button></a>
+      
+      <div id="datos">
+          <label for="usuario">Email: <br>
+            <input id="data" type="email" placeholder="Your email">
+          </label>
+          <br>
+          <label for="password">Password: <br>
+            <input id="data" type="password" placeholder="Your password">
+          </label>
+      </div>
+      <div id="already_a"><a href="">Already have an account?</a></div>
+  </div>
+
+  <div class="container-der">
+    <div>
+      <img src="https://kwantec.com/wp-content/uploads/2022/12/nearshore-techonology.png" id="mono">
+    </div>
+  </div>
+
+</body>
+</html>
